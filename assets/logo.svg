@@ -1,27 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" fill="#F4F0EA"/>
-  <defs>
-    <filter id="dither" x="-10%" y="-10%" width="120%" height="120%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="7" result="n"/>
-      <feColorMatrix type="saturate" values="0" in="n" result="g"/>
-      <feComponentTransfer in="g" result="d">
-        <feFuncA type="discrete" tableValues="0 1 0 1 0 1 0 1"/>
-      </feComponentTransfer>
-      <feBlend in="SourceGraphic" in2="d" mode="multiply"/>
-    </filter>
-    <linearGradient id="skin" x1="28%" y1="18%" x2="78%" y2="88%">
-      <stop offset="0%" stop-color="#E08AD0"/>
-      <stop offset="38%" stop-color="#9B4EC7"/>
-      <stop offset="100%" stop-color="#4A1868"/>
-    </linearGradient>
-    <linearGradient id="leaf" x1="20%" y1="20%" x2="90%" y2="90%">
-      <stop offset="0%" stop-color="#7EC45A"/>
-      <stop offset="100%" stop-color="#2F7A32"/>
-    </linearGradient>
-  </defs>
-  <path filter="url(#dither)" fill="url(#skin)" d="M256 108c-48 2-86 48-94 108-12 86 10 168 62 204 16 12 48 18 72 0 52-36 74-118 62-204-8-60-46-106-94-108z"/>
-  <ellipse cx="256" cy="412" rx="16" ry="9" fill="#3A1548"/>
-  <path d="M252 118c-2-28 6-48 22-58" fill="none" stroke="#5A3A28" stroke-width="11" stroke-linecap="round"/>
-  <path filter="url(#dither)" fill="url(#leaf)" d="M272 78c28-22 72-12 88 22-18 16-52 20-82 4z"/>
-  <path d="M278 86c22-6 48 4 64 20" fill="none" stroke="#2A5E2C" stroke-width="3" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <image href="https://raw.githubusercontent.com/richardguerre/figaeo-cursor/main/assets/logo.png" width="256" height="256"/>
 </svg>
