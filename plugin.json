@@ -5,9 +5,9 @@
   "description": "Hosted SEO and AEO intelligence for Cursor. Connect, pay once in Checkout, get data.",
   "homepage": "https://figaeo.com",
   "repository": "https://github.com/richardguerre/figaeo-cursor",
-  "keywords": ["figaeo", "seo", "aeo", "mcp", "serp"],
-  "logo": "assets/logo.svg",
+  "keywords": ["fig", "figaeo", "seo", "aeo", "mcp", "serp"],
+  "logo": "assets/logo.png",
   "author": {
-    "name": "FigAEO"
+    "name": "Fig"
   }
 }
