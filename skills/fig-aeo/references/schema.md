@@ -28,10 +28,10 @@ Use only when the page shows the same Q&A in HTML.
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does Fig edit the brand's site?",
+      "name": "Does Acme Auth edit the customer's site?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Fig returns live SEO and AEO research. The agent or brand owner decides what to change."
+        "text": "No. Acme Auth returns research and setup data. The agent or brand owner decides what to change."
       }
     }
   ]
