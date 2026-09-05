@@ -2,7 +2,7 @@
   "name": "figaeo",
   "displayName": "Fig",
   "version": "1.0.0",
-  "description": "Hosted SEO and AEO intelligence for Cursor. Connect, pay once in Checkout, get data.",
+  "description": "Hosted SEO and AEO intelligence for Cursor, with fig-seo, fig-aeo, and fig-growth-creative skills.",
   "homepage": "https://figaeo.com",
   "repository": "https://github.com/richardguerre/figaeo-cursor",
   "keywords": ["fig", "figaeo", "seo", "aeo", "mcp", "serp"],
