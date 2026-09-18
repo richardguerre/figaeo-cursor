@@ -27,7 +27,7 @@ Fig improves SEO/AEO here by showing commercial best-of demand, who already rank
    - Ship or improve an owned listicle or comparison on the brand site (brief via `fig-content-strategy`).
    - Build an outreach target list: URL, position, format, and whether the brand is already listed. Fig does not send email, negotiate payment, or buy placements.
    - Add companion YouTube only when the User authorizes video work. Quality and transcripts still affect ranking and retrieval.
-5. Recheck the same queries with `get_serp` and `research_ai_visibility` after changes have had time to be crawled. Report observed results; Fig does not guarantee rankings or citations.
+5. Recheck the same queries with `get_serp` and `research_ai_visibility` after changes have had time to be crawled. Report the observed results and tie each outcome to returned evidence.
 
 Paid or affiliate placements on third-party listicles are outside Fig. Disclose sponsorships on owned comparisons. Follow host and Google policies.
 

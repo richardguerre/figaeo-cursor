@@ -1,21 +1,31 @@
-# Fig (Cursor plugin)
+# Fig for Cursor
 
-Hosted SEO/AEO MCP for Cursor.
+First-time setup for agents: fetch https://figaeo.com/llms.txt (optional https://figaeo.com/install.md). The bundle contains Fig MCP plus six specialist SEO/AEO skills. Start with `fig-seo-aeo`, then call on `fig-site-audit`, `fig-search-research`, `fig-answer-research`, `fig-content-strategy`, and `fig-content-validation` as needed.
 
-- Product name: **Fig**
-- Domain / MCP: `https://figaeo.com` / `https://figaeo.com/mcp`
-- First-time setup: https://figaeo.com/llms.txt (optional https://figaeo.com/install.md)
-- Logotype: `assets/logo.png`
+Install the Fig plugin, or add a remote MCP server, then ask in chat.
 
-## Skills
+- URL: `https://figaeo.com/mcp`
+- Transport: Streamable HTTP
+- Auth: complete MCP OAuth 2.1 in the connect card with GitHub or Google
 
-Install is not in the skills. After connect, use:
+## Plugin
 
-- `fig-seo-aeo` — router for Automatic vs Strategic Mode; routes best-of / listicle / “get recommended in ChatGPT” work to search-research then content-strategy
-- `fig-site-audit` — technical, crawlability, indexability, on-page, and entity baseline
-- `fig-search-research` — demand, intent, SERPs, competitors, and best-of / listicle inventory
-- `fig-answer-research` — Google/ChatGPT visibility, citability, structured data, and answer-engine access
-- `fig-content-strategy` — prioritization, briefs, owned listicles/comparisons, and outreach target lists (Fig does not send outreach)
-- `fig-content-validation` — evidence-backed checks after a change ships
+Manifest: `plugin.json` (Agent Plugins) and `.cursor-plugin/plugin.json` (Cursor). MCP: `mcp.json` (`type: streamable-http` at `https://figaeo.com/mcp`). There is no `.mcp.json` in this package.
 
-Legacy names `fig-seo`, `fig-aeo`, and `fig-growth-creative` are migration stubs. Fetch https://figaeo.com/skills.md and install the specialists above.
+Cursor Marketplace: this repo’s `.cursor-plugin/marketplace.json` points at `packages/cursor`. Until the listing is live, Settings → MCP → Add remote server, or install this plugin locally, then complete OAuth.
+
+## First lookup
+
+Ask Cursor: “Look up keywords acmeauth.dev already ranks for in the United States, then suggest related ideas from the strongest terms.”
+
+If remaining usage is $0, Cursor should call `create_checkout` (default $20, minimum $10). Your agent starts Checkout and gives a short figaeo.com/pay link. Pay on your own computer. On Grok, Stripe Link can complete payment after you connect Link. Never paste a checkout.stripe.com hash URL into chat. Taxes are added at Checkout. Then retry the same tool.
+
+About 2,000 live SERPs (top 10) per $10. About 250 keyword-idea lookups per $10 at the default of 20 ideas.
+
+$20 is the recommended pack: about 4,000 live SERPs (top 10) or about 500 keyword-idea lookups (20 ideas each)—enough to research, act on, and recheck one website for about four weeks. Call create_checkout() with no amount to buy $20; minimum is $10. Deeper SERPs and site: queries cost more.
+
+A typical website can use about 20 idea lookups and about 120 SERPs per two weeks (about 30 keywords, 3 snapshots). A $20 pack leaves substantial room for research, changes, and validation.
+
+## Boundaries
+
+Cursor uses Fig’s live research and specialist skills to improve the website in the same workspace.

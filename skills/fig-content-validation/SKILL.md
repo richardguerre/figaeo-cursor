@@ -22,6 +22,6 @@ Validate the delivered change, not the Agent's intention.
 
 ## Report
 
-Return pass, fail, or needs-review for each criterion, with evidence and the smallest corrective action. Separate immediate implementation validity from longitudinal outcomes: a valid change does not guarantee rankings, mentions, citations, traffic, or conversions.
+Return pass, fail, or needs-review for each criterion, with evidence and the smallest corrective action. Separate immediate implementation validity from longitudinal outcomes, and label the latter as observations from later rechecks.
 
 Record what Fig observed, what cannot yet be measured, the authorized Search Console/analytics/server-log/referral surface if any, the target metric, and when a later recheck is meaningful. Measure outcomes only after a stated observation window; do not call a passing HTML or schema check an SEO outcome.

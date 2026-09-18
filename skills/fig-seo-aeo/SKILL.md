@@ -1,6 +1,6 @@
 ---
 name: fig-seo-aeo
-description: Improve a website's SEO and AEO with Fig MCP. Use for broad optimization requests, audits, strategy, content opportunities, implementation changes, or validation. Route get-recommended-in-ChatGPT, listicle, and best-of requests to fig-search-research then fig-content-strategy. Infer whether the request is clear enough for Automatic Mode or needs Strategic Mode, and preserve Strategy Approval before strategic implementation.
+description: Improve a website's SEO and AEO with Fig MCP. Use for broad optimization requests, audits, strategy, content opportunities, implementation changes, or validation. Call fig-search-research then fig-content-strategy for get-recommended-in-ChatGPT, listicle, and best-of requests. Infer whether the request is clear enough for Automatic Mode or needs Strategic Mode, and preserve Strategy Approval before strategic implementation.
 metadata:
   version: 3
   managed-by: fig-skill-update
@@ -10,7 +10,7 @@ metadata:
 
 Use Fig as the evidence layer and make the consuming Agent useful to the User. Fig is read-only: the consuming Agent may write content and implementation changes in the User's repository or website when the request authorizes it.
 
-## Route the work
+## Apply the work
 
 Infer the mode from the request and available context.
 
@@ -27,7 +27,7 @@ Delegate bounded work to the specialist skills when they are available:
 - `fig-content-strategy` for prioritization, information architecture, content opportunities, briefs, owned listicles/comparisons, and outreach target lists.
 - `fig-content-validation` for checking proposed or shipped changes against the evidence and acceptance criteria.
 
-Route "get recommended in ChatGPT", listicle, and best-of intents to `fig-search-research`, then `fig-content-strategy`.
+For "get recommended in ChatGPT", listicle, and best-of intents, call `fig-search-research`, then `fig-content-strategy`.
 
 ## Strategic Mode: Recommendation Loop
 
@@ -43,7 +43,7 @@ Strategic Mode has no universal SEO/AEO goal. The aligned strategy is the goal. 
 ## Automatic Mode
 
 1. Establish the target site, market, language, requested outcome, and relevant constraints from the request and available files.
-2. Call `balance` before paid research. Use the smallest focused set of Fig calls that can support the requested change.
+2. Call `balance` before paid research. Use the smallest focused set of Fig calls that can support the requested change. Do not mention remaining balance in User chat unless remaining is under $1 (or $0 / insufficient_credits). Call `balance` when the User asks or before Checkout — do not parrot Remaining $ after every paid tool.
 3. Research first, then write content or make implementation changes directly in the consuming Agent's scope.
 4. Preserve the site's facts, voice, product claims, and existing architecture unless the request authorizes changing them.
 5. Record the inferred goal, audience, authorization, assumptions, evidence, selected change, and validation criteria before editing.
@@ -57,6 +57,7 @@ Strategic Mode has no universal SEO/AEO goal. The aligned strategy is the goal. 
 - Treat volume as an input, never the objective. Weigh business fit, audience intent, authority, competition, evidence quality, and expected impact.
 - Keep the scope focused. Recheck the same queries and conditions after publishing; do not imply a ranking or citation guarantee.
 - If a Fig call returns authentication, insufficient credits, validation, no data, or provider failure, surface the state and follow the Fig checkout or recovery workflow. Never fill the gap with guesses.
+- Null or empty keyword metrics, ideas, or coverage arrays mean the provider had no data for that query. The tool succeeded. Do not invent volumes, and do not retry the same call as if it failed.
 
 ## Completion
 

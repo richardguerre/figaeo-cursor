@@ -26,7 +26,7 @@ Claude, Gemini, and Perplexity mention scores are not supplied by Fig. Say when 
 ## Structured data
 
 - Use JSON-LD when practical, but recommend only a type and properties the page genuinely qualifies for under Google's feature-specific guidelines. Structured data must describe visible content and must not be used to add hidden, unsupported, or misleading claims.
-- Validate JSON-LD syntax, then use Google's [Rich Results Test](https://search.google.com/test/rich-results) and authorized Search Console [URL Inspection](https://support.google.com/webmasters/answer/9012289) to check rendered eligibility and indexing. A valid test does not guarantee a rich result, ranking, or AI citation.
+- Validate JSON-LD syntax, then use Google's [Rich Results Test](https://search.google.com/test/rich-results) and authorized Search Console [URL Inspection](https://support.google.com/webmasters/answer/9012289) to check rendered eligibility and indexing. Treat those checks as implementation evidence, then use later rechecks to observe search and answer-engine outcomes.
 - Treat schema as ordinary SEO support, not special AEO markup. Google does not require special schema for AI Overviews or AI Mode.
 
 ## Output

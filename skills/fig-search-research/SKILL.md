@@ -13,9 +13,9 @@ Start from the target site's real coverage, baseline performance, business/conve
 ## Research loop
 
 1. Establish the baseline, target metric, observation window, assumptions, confounders, and authorized measurement surfaces before paid research.
-2. Call `balance`, then `research_domain` on the brand host.
+2. Call `balance`, then `research_domain` on the brand host. Do not mention remaining balance in User chat unless remaining is under $1 (or $0 / insufficient_credits). Call `balance` when the User asks or before Checkout — do not parrot Remaining $ after every paid tool.
 3. Use `suggest_keywords` from strong existing terms only when more ideas are needed.
-4. Use `get_keyword_metrics` on a short candidate set. Treat volume, CPC, competition, and intent as evidence, not a verdict.
+4. Use `get_keyword_metrics` on a short candidate set. Treat volume, CPC, competition, and intent as evidence, not a verdict. Null or missing metrics mean Google Ads had no coverage for that query — the call succeeded. A batch can mix populated rows and null rows. Empty coverage is `[]`. Do not treat those as a broken tool or `provider_failure`. One 40501 (too many words or invalid field) fails the whole keyword array; shorten or split phrases and resubmit. Fig does not split the array and retry only valid phrases.
 5. Use `get_serp` and `compare_serp_competitors` for the queries that could change the decision. Resolve an ambiguous city with `resolve_location` before local research.
 
 Read each SERP as a specification: dominant format, intent, repeated domains, features, freshness, and gaps. Prefer opportunities where the site has a relevant URL or the SERP has an addressable intent or quality gap.
@@ -31,7 +31,7 @@ Fig improves SEO/AEO here by showing commercial best-of demand, who already rank
    - Ship or improve an owned listicle or comparison on the brand site (brief via `fig-content-strategy`).
    - Build an outreach target list: URL, position, format, and whether the brand is already listed. Fig does not send email, negotiate payment, or buy placements.
    - Add companion YouTube only when the User authorizes video work. Quality and transcripts still affect ranking and retrieval.
-5. Recheck the same queries with `get_serp` and `research_ai_visibility` after changes have had time to be crawled. Report observed results; Fig does not guarantee rankings or citations.
+5. Recheck the same queries with `get_serp` and `research_ai_visibility` after changes have had time to be crawled. Report the observed results and tie each outcome to returned evidence.
 
 Paid or affiliate placements on third-party listicles are outside Fig. Disclose sponsorships on owned comparisons. Follow host and Google policies.
 
