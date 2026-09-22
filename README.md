@@ -25,7 +25,7 @@ About 2,000 live SERPs (top 10) per $10. About 250 keyword-idea lookups per $10 
 
 $20 is the recommended pack: about 4,000 live SERPs (top 10) or about 500 keyword-idea lookups (20 ideas each)—enough to research, act on, and recheck one website for about four weeks. Call create_checkout() with no amount to buy $20; minimum is $10. Deeper SERPs and site: queries cost more.
 
-A typical website can use about 20 idea dlookups and about 120 SERPs per two weeks (about 30 keywords, 3 snapshots). A $20 pack leaves substantial room for research, changes, and validation.
+A typical website can use about 20 idea lookups and about 120 SERPs per two weeks (about 30 keywords, 3 snapshots). A $20 pack leaves substantial room for research, changes, and validation.
 
 ## Boundaries
 
