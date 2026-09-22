@@ -87,7 +87,7 @@ When two candidates are within similar confidence and expected impact, pick the 
 
 **Operator memory.** Read and write `fig/operator-memory.json` as specified in Operator memory. Use stored vitals, last actions, and open priorities in the vote. A quiet outcome is valid when nothing beats the bar.
 
-**Search Console (optional).** v1 is a User-brought GSC/Google connector (host Google/GSC MCP, read-only Search Console API, or a User export). Fig Google sign-in is email only and is not GSC. Fig-hosted GSC OAuth and MCP reads are specified at https://figaeo.com/gsc.md and are not shipped. When GSC is connected, fold returned Search Analytics into the vote: low-CTR pages, striking-distance queries, and wrong-query/cannibalization. When GSC is not connected, mark Search Console measurement unavailable and score from Fig MCP plus page inspection. Never invent clicks, impressions, CTR, position, or coverage counts.
+**Search Console (optional).** Prefer a GSC UI CSV/Sheets/Excel export first, then an LLM-oriented GSC CLI (npm) with `webmasters.readonly` after one OAuth/ADC login. How-to: https://figaeo.com/gsc.md. Fig Google sign-in is email only and is not GSC. GA4 is not GSC. When GSC is connected, fold returned Search Analytics into the vote: low-CTR pages, striking-distance queries, and wrong-query/cannibalization. When GSC is not connected, mark Search Console measurement unavailable and score from Fig MCP plus page inspection. Never invent clicks, impressions, CTR, position, or coverage counts.
 
 ### Vote
 
@@ -125,7 +125,7 @@ Call `fig-seo-setup` and do not continue the SEO pass when:
 - The User asks setup, what is connected, or how to connect Search Console or other SEO integrations.
 - The next useful step is a human-only approval (connector, domain verify, Strategy Approval, crawler training, claims not in the files).
 
-Never auto-connect GSC, analytics, CMS, IndexNow, Bing, or repo access. Missing GSC does not block Fig research; mark first-party Search measurement unavailable until a user-brought or Fig-hosted GSC path exists.
+Never auto-connect GSC, analytics, CMS, IndexNow, Bing, or repo access. Missing GSC does not block Fig research; mark first-party Search measurement unavailable until a user-brought GSC connection exists.
 
 ## Automatic mode
 
@@ -165,7 +165,7 @@ Strategic mode has no universal SEO/AEO goal. The aligned strategy is the goal. 
 ## Evidence rules
 
 - Use Fig MCP for live keyword, SERP, backlink, domain, and supported AI-visibility data. Do not invent volumes, rankings, citations, competitors, or movement. Report Lab and Field performance only from a named tool run or an authorized Search Console / host RUM surface; write `Field: unavailable` or `Lab: unavailable` instead of filling scores.
-- Search Console is optional evidence, not a Fig MCP tool. v1 is a User-brought GSC/Google connector (host Google/GSC MCP, read-only Search Console API, or a User export). Fig Google sign-in is email only and is not GSC. Fig-hosted GSC OAuth and MCP reads are specified at https://figaeo.com/gsc.md and are not shipped.
+- Search Console is optional evidence, not a Fig MCP tool. Prefer a GSC UI CSV/Sheets/Excel export first, then an LLM-oriented GSC CLI (npm) with `webmasters.readonly` after one OAuth/ADC login; verify the package before install. How-to: https://figaeo.com/gsc.md. Fig Google sign-in is email only and is not GSC. GA4 is not GSC.
 - When GSC is connected, pull read-only Search Analytics for the verified property and named date range. Use observed rows for low-CTR pages, striking-distance queries, wrong-query/cannibalization, and index issues when URL Inspection, sitemaps, or a User Coverage export exists. Name that GSC property, date range, and baseline metrics in the measurement handoff.
 - When GSC is not connected, mark Search Console measurement unavailable. Continue with Fig MCP and page inspection. Never invent clicks, impressions, CTR, position, or coverage counts. Fig volumes and live SERPs are not GSC metrics.
 - Pair tool results with direct inspection of the target pages, HTTP behavior, `robots.txt`, meta/header directives, sitemaps, JSON-LD, internal links, source HTML, and rendered content where relevant. Treat `llms.txt` as optional and platform-specific: inspect it when the User names a consumer that uses it or when it is already present, but never present it as a Google Search or AI Overviews requirement.

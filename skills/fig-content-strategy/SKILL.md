@@ -22,7 +22,7 @@ Inventory the owned URL set and return ranked prune, merge, and refresh actions 
 
 Label measurement at the top of the census:
 
-- **GSC-connected** when a User-brought Search Console connector, read-only API, or export returned page or query rows for this host. Fig-hosted GSC MCP reads are specified at https://figaeo.com/gsc.md and are not shipped.
+- **GSC-connected** when a GSC UI export or a user-brought read-only CLI returned page or query rows for this host.
 - **GSC-unavailable (degraded)** when those reads are missing. Mark Search Console measurement unavailable. Inventory, overlap, and orphan flags still run. Cannibalization, CTR-gap, and striking-distance flags stay qualitative. Do not invent Search Console numbers.
 
 ### Inventory

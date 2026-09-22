@@ -52,13 +52,13 @@ If nothing is open: `Nothing needs you. Continue in fig-seo-aeo.` Then return to
 Inspect MCP servers, project files, env, authorized exports, and the live site. Classify each rung **connected** or **missing**. Print connected rungs first, then missing rungs in this unlock order (do not shuffle):
 
 1. **Write surface (repo / CMS / hosting)** — unlocks implementation. User-brought: grant the Agent repo or CMS access. Fig does not host CMS OAuth.
-2. **Google Search Console** — unlocks queries, pages, CTR vs position, index/coverage, striking distance. User-brought: connect GSC (or Google) in the Agent with read access to the property (host Google/GSC MCP, read-only Search Console API, or a User export). Fig Google sign-in is email only and is not GSC. Fig-hosted GSC OAuth and MCP reads are specified at https://figaeo.com/gsc.md and are not shipped. Checkout and Fig MCP OAuth do not imply GSC. If GSC is not connected, mark Search Console measurement unavailable. Never invent clicks, impressions, CTR, position, coverage counts, or other Search evidence.
+2. **Google Search Console** — unlocks queries, pages, CTR vs position, index/coverage, striking distance. Prefer a GSC UI CSV/Sheets/Excel export first (zero GCP; ~1,000 row cap, one-shot, no URL Inspection API). Second: an LLM-oriented GSC CLI (npm) after one OAuth/ADC login with `webmasters.readonly`; verify the package before install; enable Search Console API and property access. A host readonly GSC MCP is optional, not preferred. Fig Google sign-in is email only and is not GSC. GA4 is not GSC. Checkout and Fig MCP OAuth do not imply GSC. If GSC is not connected, mark Search Console measurement unavailable. Never invent clicks, impressions, CTR, position, coverage counts, or other Search evidence. How-to: https://figaeo.com/gsc.md.
 3. **Analytics (GA4 or equivalent)** — unlocks on-site behavior, conversions, and ChatGPT `utm_source=chatgpt.com` referrals. User-brought. Fig does not host analytics.
 4. **IndexNow** — unlocks post-publish pings. User places the key; the Agent may POST after approval.
 5. **Bing Webmaster Tools** — unlocks Bing index data. User-brought. After GSC, not instead of it.
 6. **Local / extra trackers the User already pays for** (for example Google Business Profile) — only if the goal needs them. Vanity connectors stay last.
 
-For each missing rung, state the unlock, how to connect (user-brought vs Fig-hosted), and that the human must approve. Do not auto-connect.
+For each missing rung, state the unlock, how to connect with a user-brought path, and that the human must approve. Do not auto-connect.
 
 Checkout, remaining Fig balance, and Setup Orient are not rungs on this ladder.
 
