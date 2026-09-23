@@ -1,6 +1,6 @@
 # Fig for Cursor
 
-First-time setup for agents: fetch https://figaeo.com/llms.txt (optional https://figaeo.com/install.md). The bundle contains Fig MCP plus one router (`fig-seo-aeo`) and twelve specialist SEO/AEO skills. Start with `fig-seo-aeo`, then call on `fig-site-audit`, `fig-search-research`, `fig-answer-research`, `fig-content-strategy`, `fig-content-craft`, `fig-programmatic-seo`, `fig-free-tool`, `fig-content-validation`, `fig-outcomes`, `fig-seo-setup`, `fig-offpage`, and `fig-distribute` as needed.
+First-time setup for agents: fetch https://figaeo.com/llms.txt (optional https://figaeo.com/install.md). Fig is the missing tool for Cursor to research and ship SEO and AEO. $20 one-time. Start with the `fig` skill, then call on `fig-site-audit`, `fig-search-research`, `fig-answer-research`, `fig-content-strategy`, `fig-content-craft`, `fig-programmatic-seo`, `fig-free-tool`, `fig-content-validation`, `fig-outcomes`, `fig-seo-setup`, `fig-offpage`, and `fig-distribute` as needed.
 
 
 Install the Fig plugin, or add a remote MCP server, then ask in chat.

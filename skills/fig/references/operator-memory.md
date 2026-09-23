@@ -78,7 +78,7 @@ This file is not a selection rubric (repair vs create) and not a GSC connector. 
       "id": "act:2026-09-21-quiet",
       "at": "2026-09-21T18:00:00.000Z",
       "mode": "automatic",
-      "specialist": "fig-seo-aeo",
+      "specialist": "fig",
       "summary": "Rechecked the same SERP query; position unchanged; window still open.",
       "urls": ["https://example.com/mcp"],
       "outcome": "quiet",
@@ -111,7 +111,7 @@ Required top-level keys: `version`, `updated_at`, `site` (with `host` and `marke
 
 ## Read / write protocol
 
-`fig-seo-aeo` owns the file. Specialists read it and return patches; the parent merges and writes, unless the specialist is running as the only session — then it may write the same merge itself.
+`fig` owns the file. Specialists read it and return patches; the parent merges and writes, unless the specialist is running as the only session — then it may write the same merge itself.
 
 1. **Start of Automatic mode and Strategic mode:** read the file if present. If missing, create it after site/market are known, with empty arrays. Reuse open windows and baselines; do not spend credits re-fetching a metric whose window is still `open` unless the User asked to recheck now.
 2. **During specialist work:** pass `site`, `market`, relevant `vitals`, `baselines`, `priorities`, and `observation_windows`. `fig-site-audit` updates inspection vitals, technical baselines, and audit priorities. `fig-search-research` / `fig-answer-research` append observed Fig query rows. `fig-content-strategy` merges open content priorities. `fig-content-validation` updates vitals and window `status` after a recheck.

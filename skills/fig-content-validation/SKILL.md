@@ -8,7 +8,7 @@ metadata:
 
 # Fig Content Validation
 
-Validate the delivered change, not the Agent's intention. When judging whether a shipped repair, refresh, consolidate, prune, or create matched the plan, use the Selection rubric in `fig-seo-aeo` as the agreed action class.
+Validate the delivered change, not the Agent's intention. When judging whether a shipped repair, refresh, consolidate, prune, or create matched the plan, use the Selection rubric in `fig` as the agreed action class.
 
 ## Check
 
@@ -52,4 +52,4 @@ Record what Fig observed, what cannot yet be measured, the target metric, and wh
 
 After a shipped change is judged, register it with `fig-outcomes` (hypothesis, change, window, sources, before). When the window has elapsed, score through `fig-outcomes` — including the Fig-only degraded path when GSC/analytics is unavailable. Validation reports implementation pass/fail; `fig-outcomes` owns the later movement score.
 
-Write observed vitals and window status (`open` / `due` / `closed`) into operator memory, or return a patch for `fig-seo-aeo` to merge. Never invent movement.
+Write observed vitals and window status (`open` / `due` / `closed`) into operator memory, or return a patch for `fig` to merge. Never invent movement.

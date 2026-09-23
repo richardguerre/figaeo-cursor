@@ -10,11 +10,11 @@ metadata:
 
 Use this specialist only when live SERP evidence and business facts support a **bounded template set**. Fig does not generate thousands of pages by default, does not sell programmatic SEO as unlimited content, and does not host the User's site. The consuming Agent implements in the User's repository.
 
-Prefer repair, refresh, consolidation, or pruning of existing URLs over net-new templates when the same user need is already covered. Apply the Selection rubric in `fig-seo-aeo`: repair, refresh, consolidate, and prune beat create when evidence is close.
+Prefer repair, refresh, consolidation, or pruning of existing URLs over net-new templates when the same user need is already covered. Apply the Selection rubric in `fig`: repair, refresh, consolidate, and prune beat create when evidence is close.
 
-`fig-seo-aeo` owns Automatic mode vs Strategic mode. This skill does not open a parallel router.
+`fig` owns Automatic mode vs Strategic mode. `fig` routes each job to the specialist skill that fits. This skill does not start a second path.
 
-- **Strategic mode:** research the gate, propose the template set, and wait for Strategy Approval. Write no pages, change no code, and open no PRs until then.
+- **Strategic mode:** research the gate, propose the template set, and wait until the User agrees the plan. Write no pages, change no code, and open no PRs until then.
 - **Automatic mode:** proceed with templates only when the request clearly authorizes a bounded programmatic set (named routes, named entities, or an approved plan). Inferring "they asked for more SEO" is not authorization.
 
 ## Gate
@@ -96,11 +96,11 @@ Optional notes for the implementing Agent in the User's repo. Fig does not host,
 
 For Next.js App Router (and similar file-based routers): bounded dynamic segments such as `app/compare/[pair]/page.tsx` or `app/for/[persona]/page.tsx`; `generateStaticParams` (or equivalent) from the **named entity list**, not from an open keyword dump; unique `title`, description, canonical, and H1 per param; sitemap entries only for URLs that pass the quality bar; skip generating A-vs-B and B-vs-A. ISR/SSG is a performance choice, not an SEO strategy. If the stack is not Next.js, keep the same IA and quality rules in that framework's routing.
 
-Pass these notes into the `fig-seo-aeo` implementation worker with the brief. Do not treat stack notes as a reason to proceed when the gate failed.
+Pass these notes into the `fig` implementation worker with the brief. Do not treat stack notes as a reason to proceed when the gate failed.
 
 ## Ship and validate
 
-In Automatic mode, implement through `fig-seo-aeo` (host subagents, new bots, or equivalent isolated sessions). Ship a **pilot slice** of the set first when the bound is larger than a handful of URLs; expand only if the pilot meets the quality bar.
+In Automatic mode, implement through `fig` (host subagents, new bots, or equivalent isolated sessions). Ship a **pilot slice** of the set first when the bound is larger than a handful of URLs; expand only if the pilot meets the quality bar.
 
 After ship, call `fig-content-validation` on the hub plus each new or repaired instance:
 
@@ -113,4 +113,4 @@ Report pass/fail/needs-review per URL. Immediate validity is not a ranking outco
 
 ## Handoff
 
-Return: gate result (proceed or refuse with the failed items); entity list and bound; template brief; IA and internal-link map; stack notes if useful; authorization/Strategy Approval state; validation plan via `fig-content-validation`; register/score handoff to `fig-outcomes`. This specialist does not write production pages; `fig-seo-aeo` owns writing after authorization.
+Return: gate result (proceed or refuse with the failed items); entity list and bound; template brief; IA and internal-link map; stack notes if useful; authorization and agreed-plan state; validation plan via `fig-content-validation`; register/score handoff to `fig-outcomes`. This specialist does not write production pages; `fig` owns writing after authorization.

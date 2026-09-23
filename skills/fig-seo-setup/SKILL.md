@@ -1,6 +1,6 @@
 ---
 name: fig-seo-setup
-description: Print the human-only SEO decision queue (needs-you) or the SEO connections setup ladder (repo/CMS, GSC, analytics, IndexNow, Bing). Use when the User asks what they need to do, what is connected, how to connect Search Console, or when work is blocked on a human approval. Distinct from Fig Checkout and Setup Orient.
+description: Print the human-only SEO decision queue (needs-you) or the SEO connections setup ladder (repo/CMS, GSC, analytics, IndexNow, Bing). Use when the User asks what they need to do, what is connected, how to connect Search Console, or when work is blocked on a human approval. Distinct from Fig Checkout and the intro.
 metadata:
   version: 1
   managed-by: fig-skill-update
@@ -8,21 +8,21 @@ metadata:
 
 # Fig SEO Setup
 
-Two invocations: **needs-you** and the **setup ladder**. Both are SEO-site HITL. They are not Fig Checkout, remaining balance, or Setup Orient.
+Two invocations: **needs-you** and the **setup ladder**. Both are SEO-site HITL. They are not Fig Checkout, remaining balance, or the intro.
 
 Never auto-connect accounts. The human approves every connector.
 
-## When `fig-seo-aeo` surfaces this
+## When `fig` surfaces this
 
 Call this specialist and stop the parent workflow for that pass when:
 
 - The User asks needs-you, what you need from them, or what is blocking.
 - The User asks setup, what is connected, or how to connect GSC, analytics, CMS, IndexNow, Bing, or repo access.
-- The next useful step is a decision only the human can make (connector OAuth, domain verify, Strategy Approval, crawler training, claims the files do not contain).
+- The next useful step is a decision only the human can make (connector OAuth, domain verify, agreeing the plan, crawler training, claims the files do not contain).
 
-Do not run this instead of Setup Orient on first-run after Checkout or a funded Fig balance. Orient is Fig product (MCP research + Automatic mode vs Strategic mode). This skill is SEO connections for the website.
+Do not run this instead of the intro on first-run after Checkout or a funded Fig balance. The intro is Fig product (MCP research + Automatic mode vs Strategic mode). This skill is SEO connections for the website.
 
-If Fig MCP is missing or remaining balance cannot cover the next Fig lookup, follow install/Checkout, then Orient — do not list Checkout as a GSC-style connector on this ladder.
+If Fig MCP is missing or remaining balance cannot cover the next Fig lookup, follow install/Checkout, then post the intro — do not list Checkout as a GSC-style connector on this ladder.
 
 ## Needs-you
 
@@ -36,7 +36,7 @@ Include a line only when it is actually open. Typical items, in this order:
 4. Connect analytics (GA4 or equivalent).
 5. Verify the domain for GSC or Bing if that step is still required.
 6. Place or share an IndexNow key on the origin.
-7. Record Strategy Approval when Strategic mode is waiting.
+7. Record that the User agreed the plan when Strategic mode is waiting.
 8. Decide crawler training access (`GPTBot`, `ClaudeBot`, `Google-Extended`) separately from Search crawlers.
 9. Supply product claims, legal, or brand facts that are not in the files.
 
@@ -45,7 +45,7 @@ Format in User chat:
 Needs-you (stop here):
 1. [action] — why only the human can do it — what it unblocks
 
-If nothing is open: `Nothing needs you. Continue in fig-seo-aeo.` Then return to the parent.
+If nothing is open: `Nothing needs you. Continue in fig.` Then return to the parent.
 
 ## Setup ladder
 
@@ -60,8 +60,8 @@ Inspect MCP servers, project files, env, authorized exports, and the live site. 
 
 For each missing rung, state the unlock, how to connect with a user-brought path, and that the human must approve. Do not auto-connect.
 
-Checkout, remaining Fig balance, and Setup Orient are not rungs on this ladder.
+Checkout, remaining Fig balance, and the intro are not rungs on this ladder.
 
 ## Handoff
 
-After needs-you, stop. After the ladder, return to `fig-seo-aeo`. Missing GSC does not block Fig keyword, SERP, or AI-visibility research; it blocks first-party Search measurement. Other specialists should keep naming the authorized measurement surface, or mark outcome measurement unavailable.
+After needs-you, stop. After the ladder, return to `fig`. Missing GSC does not block Fig keyword, SERP, or AI-visibility research; it blocks first-party Search measurement. Other specialists should keep naming the authorized measurement surface, or mark outcome measurement unavailable.

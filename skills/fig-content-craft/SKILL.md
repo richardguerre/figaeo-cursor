@@ -10,7 +10,7 @@ metadata:
 
 Use this specialist after `fig-content-strategy` has a brief, or when revising shipped copy against that brief. Strategy chooses what to ship and why. Craft decides how the page reads, which table or figure belongs, and how original evidence is shown. Do not start here for prioritization or information architecture.
 
-In Automatic mode, apply these patterns while implementing through `fig-seo-aeo` (subagents / new bots / host-equivalent sessions). In Strategic mode, attach craft notes to the brief and wait for Strategy Approval before writing.
+In Automatic mode, apply these patterns while implementing through `fig` (subagents / new bots / host-equivalent sessions). In Strategic mode, attach craft notes to the brief and wait until the User agrees the plan before writing.
 
 ## Route vs strategy
 
@@ -18,7 +18,7 @@ In Automatic mode, apply these patterns while implementing through `fig-seo-aeo`
 - `fig-content-craft`: polish pass, AI-writing tells, visuals/tables, proprietary-data page patterns, and research-brief recipes that fill strategy's proof slots.
 - `fig-content-validation`: pass/fail against brief, sources, craft checks, and Fig rechecks.
 
-If the User asked only what to publish, stay in strategy. If they asked to write, rewrite, humanize, add a table or chart, or publish original research, pull this skill. Recheck later with `fig-content-validation`. Follow the Selection rubric in `fig-seo-aeo`: prefer polishing an existing URL over drafting a sibling page when evidence is close.
+If the User asked only what to publish, stay in strategy. If they asked to write, rewrite, humanize, add a table or chart, or publish original research, pull this skill. Recheck later with `fig-content-validation`. Follow the Selection rubric in `fig`: prefer polishing an existing URL over drafting a sibling page when evidence is close.
 
 ## Polish pass
 

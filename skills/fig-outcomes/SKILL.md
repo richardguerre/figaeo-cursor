@@ -10,7 +10,7 @@ metadata:
 
 Keep a closed-loop ledger of shipped actions vs observed movement on this site. Immediate implementation validity stays in `fig-content-validation`. This specialist registers at ship time and scores after the observation window.
 
-`fig-seo-aeo` delegates register and score here. Do not treat a passing HTML, schema, or crawl check as an SEO/AEO outcome.
+`fig` delegates register and score here. Do not treat a passing HTML, schema, or crawl check as an SEO/AEO outcome.
 
 ## Record
 
@@ -62,7 +62,7 @@ Score only after the stated window has elapsed. Recheck the same queries, countr
    - `no_op` — hypothesized metric did not materially change.
    - `insufficient_evidence` — window unmet, source missing, or sample too thin.
    - `confounded` — other changes or volatility can explain the delta.
-6. `rubric_note`: on `supported`, candidate to upweight this tactic on this site; on repeated `unsupported` or `no_op` that is not `confounded`, candidate to downweight. Selection still belongs to `fig-seo-aeo` / `fig-content-strategy`. A quiet "nothing beat the bar" score is a valid result.
+6. `rubric_note`: on `supported`, candidate to upweight this tactic on this site; on repeated `unsupported` or `no_op` that is not `confounded`, candidate to downweight. Selection still belongs to `fig` / `fig-content-strategy`. A quiet "nothing beat the bar" score is a valid result.
 
 Report the score, sources, before/after, confounders, and rubric note. Separate Fig snapshots from GSC/analytics. Do not claim ranking, traffic, or citation lift beyond the measured fields.
 

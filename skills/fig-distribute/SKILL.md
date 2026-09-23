@@ -18,14 +18,14 @@ For off-page target lists (directories, digital PR, unlinked mentions), use `fig
 
 Confirm the URL is the final public URL: HTTP success, intended canonical, not blocked by `robots.txt` / `noindex`, and discoverable from sitemap or internal links. If those fail, stop and send the User back to `fig-site-audit` / `fig-content-validation`. Do not "distribute" a draft, preview, or blocked URL.
 
-Record baseline, target metric, observation window, assumptions, confounders, and the authorized measurement surface **before** claiming movement. Score with the Selection rubric in `fig-seo-aeo`. When Search Console is not connected, mark Search Console measurement unavailable.
+Record baseline, target metric, observation window, assumptions, confounders, and the authorized measurement surface **before** claiming movement. Score with the Selection rubric in `fig`. When Search Console is not connected, mark Search Console measurement unavailable.
 
 ## Channel checklist
 
 Produce a short, prioritized checklist. Skip channels the User does not have. For each item: owner (User vs their agent), asset needed, and a success check.
 
 - **Index / crawl** — sitemap ping if the site owns that process; IndexNow or Bing Webmaster URL submit **only if already connected** in the User's stack; Google Search Console URL Inspection **only if the User brought a GSC connector or Fig GSC tools exist**. Fig MCP does not submit IndexNow. Do not invent a Fig ping tool.
-- **Internal promo** — relevant internal links, nav, docs, changelog, or in-app notice on the brand site. Implement those through `fig-seo-aeo` when Automatic mode already authorizes on-site edits.
+- **Internal promo** — relevant internal links, nav, docs, changelog, or in-app notice on the brand site. Implement those through `fig` when Automatic mode already authorizes on-site edits.
 - **Owned social** — the User's existing profiles. Draft copy if asked; do not post unless the User explicitly asks their agent to post.
 - **Newsletter / email to existing list** — draft a blurb if asked. Fig does not send to the list.
 - **Communities** — only places the User already participates in and whose rules allow the post. No drive-by spam. Fig does not post.
@@ -43,4 +43,4 @@ Separate immediate distribution actions from later SEO/AEO outcomes.
 
 If Search Console, analytics, server logs, or referral data are authorized, name the exact surface. Otherwise mark outcome measurement unavailable.
 
-In Strategic mode, present the checklist and wait for Strategy Approval before on-site promo edits. In Automatic mode, land the checklist and any authorized on-site promo through `fig-seo-aeo`; still do not send outreach.
+In Strategic mode, present the checklist and wait until the User agrees the plan before on-site promo edits. In Automatic mode, land the checklist and any authorized on-site promo through `fig`; still do not send outreach.

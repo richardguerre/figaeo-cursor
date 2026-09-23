@@ -21,7 +21,7 @@ Use this specialist for general off-page work (directories, digital PR, unlinked
 
 ## Prioritize
 
-Rank targets by business fit, audience overlap, observed authority or SERP presence, evidence quality, implementation cost to the User, and measurement feasibility. State the trade-off behind the order. Score with the Selection rubric in `fig-seo-aeo`. When Search Console is not connected, mark Search Console measurement unavailable.
+Rank targets by business fit, audience overlap, observed authority or SERP presence, evidence quality, implementation cost to the User, and measurement feasibility. State the trade-off behind the order. Score with the Selection rubric in `fig`. When Search Console is not connected, mark Search Console measurement unavailable.
 
 Typical lanes (pick what the evidence supports; do not run all of them):
 
@@ -44,7 +44,7 @@ For each approved target, provide:
 
 Also record assumptions, confounders, and whether the brand is already listed or mentioned.
 
-In Strategic mode, ask which targets to brief (Strategy Approval) and wait. In Automatic mode, produce the prioritized brief as landed work (a file or chat artifact the User can review) through `fig-seo-aeo`, and **do not send**.
+In Strategic mode, ask which targets to brief (the User agrees the plan) and wait. In Automatic mode, produce the prioritized brief as landed work (a file or chat artifact the User can review) through `fig`, and **do not send**.
 
 ## Recheck
 

@@ -1,8 +1,8 @@
 ---
-name: fig-seo-aeo
-description: Improve a website's SEO and AEO with Fig MCP. Use for broad optimization requests, audits, strategy, content opportunities, implementation changes, or validation. Score repair, refresh, consolidate, and prune against create before shipping net-new pages. On first-run after Checkout or a funded balance, post the Setup Orient map verbatim, then take the site/goal and Automatic mode vs Strategic mode flow. Call fig-seo-setup for needs-you (human-only decisions) or the SEO connections ladder (GSC, analytics, CMS); that is not Fig Checkout or Orient. Call fig-content-strategy for content census, prune, merge, refresh, decay, cannibalization, orphans, and thin overlap. Call fig-search-research then fig-content-strategy for get-recommended-in-ChatGPT, listicle, and best-of requests. Call fig-content-craft when writing, polishing, adding visuals/tables, or publishing original-research pages. Call fig-search-research then fig-programmatic-seo for gated programmatic, compare/alternatives grids, and for-persona template sets. Call fig-search-research then fig-free-tool when SERP and business evidence favor a calculator, checker, or generator over a guide. Call fig-offpage for directories, digital PR, and unlinked-mention briefs. Call fig-distribute after a URL ships. Delegate fig-outcomes to register a shipped action and to score it after the observation window. Use Automatic mode to research and implement so the User reviews landed work; use Strategic mode to align on a plan and wait for Strategy Approval before any content change or PR. In Automatic mode, delegate implementation to subagents, new bots, or host-equivalent sessions. When Google Search Console is connected, use returned GSC rows for CTR, striking-distance, cannibalization, and index evidence; when it is not, mark Search Console measurement unavailable. Fig does not send outreach.
+name: fig
+description: Improve a website's SEO and AEO with Fig MCP. Use for broad optimization requests, audits, strategy, content opportunities, implementation changes, or validation. Score repair, refresh, consolidate, and prune against create before shipping net-new pages. On first-run after Checkout or a funded balance, post the intro verbatim, then take the site/goal and Automatic mode vs Strategic mode flow. Call fig-seo-setup for needs-you (human-only decisions) or the SEO connections ladder (GSC, analytics, CMS); that is not Fig Checkout or the intro. Call fig-content-strategy for content census, prune, merge, refresh, decay, cannibalization, orphans, and thin overlap. Call fig-search-research then fig-content-strategy for get-recommended-in-ChatGPT, listicle, and best-of requests. Call fig-content-craft when writing, polishing, adding visuals/tables, or publishing original-research pages. Call fig-search-research then fig-programmatic-seo for gated programmatic, compare/alternatives grids, and for-persona template sets. Call fig-search-research then fig-free-tool when SERP and business evidence favor a calculator, checker, or generator over a guide. Call fig-offpage for directories, digital PR, and unlinked-mention briefs. Call fig-distribute after a URL ships. Delegate fig-outcomes to register a shipped action and to score it after the observation window. Use Automatic mode to research and implement so the User reviews landed work; use Strategic mode to align on a plan and wait until the User agrees the plan before any content change or PR. In Automatic mode, delegate implementation to subagents, new bots, or host-equivalent sessions. When Google Search Console is connected, use returned GSC rows for CTR, striking-distance, cannibalization, and index evidence; when it is not, mark Search Console measurement unavailable. Fig does not send outreach.
 metadata:
-  version: 13
+  version: 14
   managed-by: fig-skill-update
 ---
 
@@ -12,9 +12,11 @@ Use Fig as the evidence layer and make the consuming Agent useful to the User. F
 
 Always say **Automatic mode** and **Strategic mode**.
 
-## Setup Orient
+Never say Orient, Setup Orient, Strategy Approval, or router to the User. Call the first-run map the intro. Call the User's yes on goals, audience, priorities, topics, and constraints the agreed plan. Name the work you are doing; `fig` routes each job to the specialist skill that fits.
 
-On first-run after Checkout or a funded remaining balance, and the User has not chosen a mode, post this Orient in User chat verbatim. Skip once a mode is already in use. Do not paraphrase.
+## Intro
+
+On first-run after Checkout or a funded remaining balance, and the User has not chosen a mode, post this intro in User chat verbatim. Skip once a mode is already in use. Do not paraphrase.
 
 Fig is ready. Quick map:
 1. **I** use Fig for live SEO/AEO research (search demand, SERPs, AI visibility, site checks).
@@ -28,16 +30,16 @@ If the User does not choose, use Automatic mode.
 
 ## Apply the work
 
-On first-run, use Setup Orient before applying a mode. Infer the mode from later requests and available context. Do not quiz the User about which mode they want.
+On first-run, post the intro before applying a mode. Infer the mode from later requests and available context. Do not quiz the User about which mode they want.
 
 - **Automatic mode:** the User has given a site and a goal, or a concrete improvement request. Research the smallest useful scope, implement the changes (content, code, PRs), validate them, and hand the User the landed work to review. The User's job is review, not choosing the next research step.
-- **Strategic mode:** the User asks for recommendations, strategy, or to plan first, or implementation would freeze an unresolved positioning, priority, claim, crawler, or success-measure choice. Research, run the Recommendation Loop, and stop at the approved plan. Write no content, change no code, and open no PRs until Strategy Approval, and do not start implementation in this mode after approval.
+- **Strategic mode:** the User asks for recommendations, strategy, or to plan first, or implementation would freeze an unresolved positioning, priority, claim, crawler, or success-measure choice. Research, run the Recommendation Loop, and stop at the approved plan. Write no content, change no code, and open no PRs until the User agrees the plan, and do not start implementation in this mode after approval.
 
-First-run uses Setup Orient; Automatic mode is the default if the User does not choose. Prefer Automatic mode when a site and goal are present. Use Strategic mode when the User asks to plan first or when a strategy choice is still open. Do not turn later mode selection into a questionnaire.
+First-run posts the intro; Automatic mode is the default if the User does not choose. Prefer Automatic mode when a site and goal are present. Use Strategic mode when the User asks to plan first or when a strategy choice is still open. Do not turn later mode selection into a questionnaire.
 
 Delegate bounded work to the specialist skills when they are available:
 
-- `fig-seo-setup` for needs-you (print the human-only queue and stop) and the SEO connections setup ladder (value-ordered GSC, analytics, CMS, IndexNow, Bing, repo). Not Fig Checkout or Setup Orient.
+- `fig-seo-setup` for needs-you (print the human-only queue and stop) and the SEO connections setup ladder (value-ordered GSC, analytics, CMS, IndexNow, Bing, repo). Not Fig Checkout or the intro.
 - `fig-site-audit` for technical, crawlability, indexability, on-page, entity, and Core Web Vitals / performance baselines.
 - `fig-search-research` for demand, intent, SERPs, competitors, keyword opportunities, and best-of / listicle inventory.
 - `fig-answer-research` for AI visibility, citability, structured data, and answer-engine access.
@@ -50,15 +52,15 @@ Delegate bounded work to the specialist skills when they are available:
 - `fig-content-validation` for checking proposed or shipped changes against the evidence, craft checks, and acceptance criteria, including the Product truth (verify-product) pass before merge or publish of marketing pages.
 - `fig-outcomes` for registering a shipped action and scoring it after the observation window.
 
-Specialists return evidence and candidate changes. This skill scores them with the Selection rubric, then Automatic mode implements one primary action and Strategic mode ranks options before Strategy Approval.
+Specialists return evidence and candidate changes. This skill scores them with the Selection rubric, then Automatic mode implements one primary action and Strategic mode ranks options before the User agrees the plan.
 
 Fig does not send outreach email, post on the User's behalf, or negotiate paid placements. `fig-offpage` and `fig-distribute` stop at briefs and checklists.
 
-For content census, prune, merge, refresh, decay, cannibalization, orphan, or thin-overlap intents, call `fig-content-strategy`. For "get recommended in ChatGPT", listicle, and best-of intents, call `fig-search-research`, then `fig-content-strategy`. Pull `fig-content-craft` when implementing the owned page. Strategy decides what to ship and why; craft decides how the page is written, visualized, and evidenced. For programmatic, pSEO, `/compare/`, `/alternatives/`, `/for/`, or template-grid intents, call `fig-search-research`, then `fig-programmatic-seo`. For calculator, checker, generator, and free-tool intents, call `fig-search-research`, then `fig-free-tool` only when SERP and business evidence favor a tool over a guide. For needs-you or SEO connections (GSC, analytics, CMS), call `fig-seo-setup`; that is not Fig Checkout or Setup Orient. For general off-page work, call `fig-offpage`. After a URL is live, call `fig-distribute`, then `fig-content-validation`. Register and score closed-loop results with `fig-outcomes`; do not fold that ledger into this router.
+For content census, prune, merge, refresh, decay, cannibalization, orphan, or thin-overlap intents, call `fig-content-strategy`. For "get recommended in ChatGPT", listicle, and best-of intents, call `fig-search-research`, then `fig-content-strategy`. Pull `fig-content-craft` when implementing the owned page. Strategy decides what to ship and why; craft decides how the page is written, visualized, and evidenced. For programmatic, pSEO, `/compare/`, `/alternatives/`, `/for/`, or template-grid intents, call `fig-search-research`, then `fig-programmatic-seo`. For calculator, checker, generator, and free-tool intents, call `fig-search-research`, then `fig-free-tool` only when SERP and business evidence favor a tool over a guide. For needs-you or SEO connections (GSC, analytics, CMS), call `fig-seo-setup`; that is not Fig Checkout or the intro. For general off-page work, call `fig-offpage`. After a URL is live, call `fig-distribute`, then `fig-content-validation`. Register and score closed-loop results with `fig-outcomes`; do not fold that ledger into this router.
 
 ## Selection rubric
 
-Score every candidate before Automatic mode implements or Strategic mode asks for Strategy Approval. Repair, refresh, consolidate, and prune beat create when evidence is close. Create when SERP and business evidence clearly warrant a new URL.
+Score every candidate before Automatic mode implements or Strategic mode asks the User to agree the plan. Repair, refresh, consolidate, and prune beat create when evidence is close. Create when SERP and business evidence clearly warrant a new URL.
 
 ### Action classes
 
@@ -93,8 +95,8 @@ When two candidates are within similar confidence and expected impact, pick the 
 
 For each candidate record: action class, target URL(s), vitals moved, evidence, implementation cost, confidence, and the next-best alternative it beats or loses to.
 
-- **Automatic mode:** pick **one primary action**. State the rationale versus the next-best alternatives, then implement that action. Companion edits belong in the same chunk only when they are required for the primary action (for example a redirect that belongs with a consolidate). Census prune or unpublish still waits for Strategy Approval.
-- **Strategic mode:** present **ranked options** from this same vote in the recommendation list **before** Strategy Approval. The User chooses; silence is not a vote for the Agent's favorite.
+- **Automatic mode:** pick **one primary action**. State the rationale versus the next-best alternatives, then implement that action. Companion edits belong in the same chunk only when they are required for the primary action (for example a redirect that belongs with a consolidate). Census prune or unpublish still waits until the User agrees the plan.
+- **Strategic mode:** present **ranked options** from this same vote in the recommendation list **before** the User agrees the plan. The User chooses; silence is not a vote for the Agent's favorite.
 
 ### Examples
 
@@ -117,13 +119,13 @@ Keep lite operator memory in the User's project so later turns are not cold. Can
 
 ## Needs-you and SEO connections
 
-Setup Orient is Fig product (MCP research + modes) after Checkout or a funded balance. Do not treat missing GSC as an Orient failure.
+The intro is Fig product (MCP research + modes) after Checkout or a funded balance. Do not treat missing GSC as an intro failure.
 
 Call `fig-seo-setup` and do not continue the SEO pass when:
 
 - The User asks needs-you, what you need from them, or what is blocking.
 - The User asks setup, what is connected, or how to connect Search Console or other SEO integrations.
-- The next useful step is a human-only approval (connector, domain verify, Strategy Approval, crawler training, claims not in the files).
+- The next useful step is a human-only approval (connector, domain verify, agreeing the plan, crawler training, claims not in the files).
 
 Never auto-connect GSC, analytics, CMS, IndexNow, Bing, or repo access. Missing GSC does not block Fig research; mark first-party Search measurement unavailable until a user-brought GSC connection exists.
 
@@ -158,9 +160,9 @@ Do not stop Automatic mode at findings plus "what should we do next?" Findings a
 3. Let the User respond freely with corrections, preferences, or disagreement. Do not ask a batch of prerequisite questions.
 4. Treat every response as a strategy update. Research further when it introduces a factual uncertainty or changes the decision boundary.
 5. Present the revised ranked recommendation list. Repeat until the User and Agent align on the strategy and the changes to make.
-6. Ask for explicit Strategy Approval. Finish with an implementation handoff the User can approve: agreed strategy, prioritized changes from the rubric vote, target pages/topics, evidence, assumptions, authorization, target metric, observation window, validation plan, and either named Search Console baselines or Search Console measurement unavailable. Write operator memory with `planned` action, merged priorities, and observation windows — no content changes, code changes, or PRs.
+6. Ask the User to agree the plan. Finish with an implementation handoff the User can approve: agreed strategy, prioritized changes from the rubric vote, target pages/topics, evidence, assumptions, authorization, target metric, observation window, validation plan, and either named Search Console baselines or Search Console measurement unavailable. Write operator memory with `planned` action, merged priorities, and observation windows — no content changes, code changes, or PRs.
 
-Strategic mode has no universal SEO/AEO goal. The aligned strategy is the goal. Do not claim alignment from silence or from the Agent's preferred plan. After Strategy Approval, stop. Start implementation only when the User asks to execute the approved plan; then follow Automatic mode and the Implementation playbook.
+Strategic mode has no universal SEO/AEO goal. The aligned strategy is the goal. Do not claim alignment from silence or from the Agent's preferred plan. After the User agrees the plan, stop. Start implementation only when the User asks to execute the approved plan; then follow Automatic mode and the Implementation playbook.
 
 ## Evidence rules
 
@@ -181,4 +183,4 @@ Strategic mode has no universal SEO/AEO goal. The aligned strategy is the goal. 
 
 Use `fig-outcomes` for registering a shipped action and scoring it after the observation window. Register the shipped action with `fig-outcomes`; score later through `fig-outcomes` after the window. Never invent movement to justify a score.
 
-Automatic mode is complete when the authorized changes are made (or a quiet measurement is recorded), relevant checks are rerun, a shipped action is registered with `fig-outcomes`, operator memory is written, and the User can review the landed work or the measurement with named Search Console baselines or Search Console measurement unavailable. Score the outcomes record only after the window. Strategic mode is complete when the User and Agent align on a strategy and concrete changes, Strategy Approval is recorded, operator memory is written, and the implementation handoff lists unresolved assumptions — with no content changes, code changes, or PRs in that pass.
+Automatic mode is complete when the authorized changes are made (or a quiet measurement is recorded), relevant checks are rerun, a shipped action is registered with `fig-outcomes`, operator memory is written, and the User can review the landed work or the measurement with named Search Console baselines or Search Console measurement unavailable. Score the outcomes record only after the window. Strategic mode is complete when the User and Agent align on a strategy and concrete changes, the agreed plan is recorded, operator memory is written, and the implementation handoff lists unresolved assumptions — with no content changes, code changes, or PRs in that pass.

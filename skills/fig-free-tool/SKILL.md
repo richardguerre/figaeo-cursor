@@ -19,13 +19,13 @@ Proceed only when all of these are true:
 - `get_serp` (and competing URLs) show calculators, checkers, generators, or other interactive results ranking, or the query clearly needs computation or configuration that prose cannot answer.
 - The brand has unique inputs, formulas, product data, or first-hand methodology a generic widget cannot copy.
 - The tool serves a real job-to-be-done on the way to the product, not a bait form.
-- Strategy Approval or equally clear User authorization names this specific tool before any build.
+- An agreed plan, or equally clear User authorization, names this specific tool before any build.
 
-Score a new tool against repair or refresh of an existing URL with the Selection rubric in `fig-seo-aeo`. When Search Console is not connected, mark Search Console measurement unavailable; never invent GSC numbers.
+Score a new tool against repair or refresh of an existing URL with the Selection rubric in `fig`. When Search Console is not connected, mark Search Console measurement unavailable; never invent GSC numbers.
 
 If a guide, table, or existing page wins the SERP and answers the intent, stay with `fig-content-strategy`. Do not invent a tool to chase leads.
 
-In Automatic mode, still require that authorization for this tool. In Strategic mode, stop at Strategy Approval with the brief. After authorization, implement through `fig-seo-aeo` (subagents / new bots / host-equivalent sessions) in the User's stack, and hand the User the landed work.
+In Automatic mode, still require that authorization for this tool. In Strategic mode, stop when the User agrees the plan, and include the brief. After authorization, implement through `fig` (subagents / new bots / host-equivalent sessions) in the User's stack, and hand the User the landed work.
 
 ## Refuse
 
