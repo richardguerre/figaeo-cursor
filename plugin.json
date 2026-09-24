@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "The missing SEO/AEO capability for agents: hosted MCP research plus specialist audit, research, content, and validation skills.",
   "homepage": "https://figaeo.com",
-  "repository": "https://github.com/richardguerre/figaeo-cursor",
-  "keywords": ["fig", "figaeo", "seo", "aeo", "mcp", "serp"],
-  "logo": "assets/logo.png",
+  "repository": "https://github.com/richardguerre/FigAEO",
+  "keywords": ["figaeo", "seo", "aeo", "mcp", "serp"],
   "author": {
     "name": "Fig"
   }
