@@ -1,6 +1,6 @@
 # Fig for Cursor
 
-First-time setup for agents: fetch https://figaeo.com/llms.txt (optional https://figaeo.com/install.md). Fig is the missing tool for Cursor to research and ship SEO and AEO. $20 one-time. Start with the `fig` skill, then call on `fig-site-audit`, `fig-search-research`, `fig-answer-research`, `fig-content-strategy`, `fig-content-craft`, `fig-programmatic-seo`, `fig-free-tool`, `fig-content-validation`, `fig-outcomes`, `fig-seo-setup`, `fig-offpage`, and `fig-distribute` as needed.
+First-time setup for agents: fetch https://figaeo.com/llms.txt (optional https://figaeo.com/install.md). Fig is the missing tool for Cursor to research and ship SEO and AEO. One-time credits from $10 ($20 recommended). Start with the `fig` skill, then call on `fig-site-audit`, `fig-search-research`, `fig-answer-research`, `fig-content-strategy`, `fig-content-craft`, `fig-programmatic-seo`, `fig-free-tool`, `fig-content-validation`, `fig-outcomes`, `fig-seo-setup`, `fig-offpage`, and `fig-distribute` as needed.
 
 
 Install the Fig plugin, or add a remote MCP server, then ask in chat.
@@ -19,7 +19,7 @@ Cursor Marketplace: this repo’s `.cursor-plugin/marketplace.json` points at `p
 
 Ask Cursor: “Look up keywords acmeauth.dev already ranks for in the United States, then suggest related ideas from the strongest terms.”
 
-If remaining usage is $0, Cursor should call `create_checkout` (default $20, minimum $10). Your agent starts Checkout and gives a short figaeo.com/pay link. Pay on your own computer. On Grok, Stripe Link can complete payment after you connect Link. Never paste a checkout.stripe.com hash URL into chat. Taxes are added at Checkout. Then retry the same tool.
+If remaining usage is $0, Cursor should call `create_checkout` (default $20, minimum $10). Your agent starts Checkout and gives a short figaeo.com/pay link. Open the link in your browser and pay on Stripe Checkout. Stripe Link may autofill your details there. Never paste a checkout.stripe.com hash URL into chat. Taxes are added at Checkout. Then retry the same tool.
 
 About 2,000 live SERPs (top 10) per $10. About 250 keyword-idea lookups per $10 at the default of 20 ideas.
 
